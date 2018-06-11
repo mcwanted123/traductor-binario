@@ -14,4 +14,4 @@ while len(num_binarios) < 8:
 
 
 num_binario = ''.join(str(x) for x in num_binarios)
-print(El número "{} en binario es {}".format(num, num_binario))
+print("El número {} en binario es {}".format(num, num_binario))
