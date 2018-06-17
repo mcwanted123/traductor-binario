@@ -1,17 +1,36 @@
-num = int(input("Ingrese un numero positivo del 0 al 255: "))
+#EMPIEZA TRADUCTOR DE TEXTO A BINARIO
+
+print("Enter some text and we will show it to you in binary!")
+text = raw_input("Text : ")
+text_ascii = []
+
+#convirtiendo texto a ASCII
+
+for character in text:
+    text_ascii.append(ord(character))
+
+#convirtiendo ASCII a binario
+
+todos_los_num_binarios = []
 num_binarios = []
-num_auxiliar = num
 
-while num // 2 != 0 or len(num_binarios) < 8:
-    binario = num % 2
-    num_binarios.insert(0, binario)
-    num //= 2
+for num in text_ascii:
+    num_auxiliar = num
 
-num = num_auxiliar
+    while num // 2 != 0 or len(num_binarios) < 8:
+        binario = num % 2
+        num_binarios.insert(0, binario)
+        num //= 2
 
-while len(num_binarios) < 8:
-    num_binarios.insert(0, 0)
+    num = num_auxiliar
+
+    while len(num_binarios) < 8:
+        num_binarios.insert(0, 0)
+
+    num_binario = ''.join(str(x) for x in num_binarios)
+    todos_los_num_binarios.append(num_binario)
+    num_binarios = []
 
 
-num_binario = ''.join(str(x) for x in num_binarios)
-print(num_binario)
+texto_en_binario = ''.join(str(x) for x in todos_los_num_binarios)
+print(texto_en_binario)
