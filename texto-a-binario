@@ -1,7 +1,7 @@
 #EMPIEZA TRADUCTOR DE TEXTO A BINARIO
 
-print("Enter some text and we will show it to you in binary!")
-text = raw_input("Text : ")
+print("¡Ingresa un texto y te lo devolvemos en binario!")
+text = input("Texto : ")
 text_ascii = []
 
 #convirtiendo texto a ASCII
