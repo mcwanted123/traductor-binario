@@ -1,2 +1,2 @@
 #empieza traductor de binario a texto
-cadena_binaria = input("Ingrese texto en binario : ")
+cadena_binaria = input("Ingrese texto en binario :")
