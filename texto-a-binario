@@ -14,18 +14,7 @@ for character in text:
 todos_los_num_binarios = []
 num_binarios = []
 
-for num in text_ascii:
-    num_auxiliar = num
 
-    while num // 2 != 0 or len(num_binarios) < 8:
-        binario = num % 2
-        num_binarios.insert(0, binario)
-        num //= 2
-
-    num = num_auxiliar
-
-    while len(num_binarios) < 8:
-        num_binarios.insert(0, 0)
 
     num_binario = ''.join(str(x) for x in num_binarios)
     todos_los_num_binarios.append(num_binario)
