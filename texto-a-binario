@@ -4,12 +4,12 @@ print("¡Ingresa un texto y te lo devolvemos en binario!")
 text = input("Texto : ")
 text_ascii = []
 
-#convirtiendo texto a ASCII
+#convirtiendo texto a ASCII/
 
 for character in text:
     text_ascii.append(ord(character))
 
-#convirtiendo ASCII a binario
+#convirtiendo ASCII a binario/
 
 todos_los_num_binarios = []
 num_binarios = []
